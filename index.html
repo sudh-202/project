@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House of Wolves - Coming Soon</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand">
+        <h1 class="brand-name">House of Wolves</h1>
+      </div>
+      <div class="coming-soon">
+        <h2 class="coming-soon-title">Coming Soon</h2>
+        <p class="description">
+          Experience luxury redefined. Our exclusive collection launches in:
+        </p>
+        
+        <div class="timer">
+          <div class="timer-item">
+            <span id="days" class="timer-value">00</span>
+            <span class="timer-label">Days</span>
+          </div>
+          <div class="timer-item">
+            <span id="hours" class="timer-value">00</span>
+            <span class="timer-label">Hours</span>
+          </div>
+          <div class="timer-item">
+            <span id="minutes" class="timer-value">00</span>
+            <span class="timer-label">Minutes</span>
+          </div>
+          <div class="timer-item">
+            <span id="seconds" class="timer-value">00</span>
+            <span class="timer-label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import { initCountdown } from './src/js/countdown.js';
+      initCountdown(6); // Set countdown for 6 months
+    </script>
+  </body>
+</html>
